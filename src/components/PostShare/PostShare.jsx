@@ -34,7 +34,46 @@ const PostShare = () => {
             <UilScenery />
             Photo
           </div>
+          <div
+            className="option"
+            style={{ color: "var(--video)" }}
+            onClick={() => imageRef.current.click()}
+          >
+            <UilPlayCircle />
+            Video
+          </div>
+          <div
+            className="option"
+            style={{ color: "var(--location)" }}
+            onClick={() => imageRef.current.click()}
+          >
+            <UilLocationPoint />
+            Location
+          </div>
+          <div
+            className="option"
+            style={{ color: "var(--shedule)" }}
+            onClick={() => imageRef.current.click()}
+          >
+            <UilSchedule />
+            Schedule
+          </div>
+          <button className="buttonn ps-button">Share</button>
+          <div style={{display: "none"}}>
+            <input
+              type="file"
+              ref={imageRef}
+              onChange={onImagechange}
+              name="myImage"
+            />
+          </div>
         </div>
+        {image && (
+          <div className="previewImage">
+            <UilTimes onClick={()=>setImage(null)}/>
+            <img src={image.image} alt="" />
+          </div>
+        )}
       </div>
     </div>
   );
