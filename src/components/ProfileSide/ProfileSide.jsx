@@ -9,7 +9,7 @@ const ProfileSide = () => {
     <div className='ProfileSide'>
       <LogoSearch />
       <ProfileCard />
-      {/* <FollowersCard /> */}
+      <FollowersCard />
     </div>
   )
 }
