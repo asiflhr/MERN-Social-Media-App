@@ -4,7 +4,10 @@ import PostShare from "../../components/PostShare/PostShare";
 import "./PostSide.css";
 
 const PostSide = () => {
-  return <div>PostSide</div>;
+  return <div className="PostSide">
+    <PostShare/>
+    {/* <Posts/> */}
+  </div>;
 };
 
 export default PostSide;
