@@ -3,9 +3,9 @@ import React from "react";
 const Home = () => {
   return (
     <div className="Home">
-      <div className="profileSide"></div>
-      <div className="postSide"></div>
-      <div className="RightSide"></div>
+      <div className="profileSide">Profile</div>
+      <div className="postSide">Post</div>
+      <div className="RightSide">Right</div>
     </div>
   );
 };
