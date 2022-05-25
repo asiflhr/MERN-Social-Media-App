@@ -58,7 +58,7 @@ const PostShare = () => {
             <UilSchedule />
             Schedule
           </div>
-          <button className="buttonn ps-button">Share</button>
+          <button className="button ps-button">Share</button>
           <div style={{display: "none"}}>
             <input
               type="file"
