@@ -7,7 +7,7 @@ import ProfileCard from '../ProfileCard/ProfileCard'
 const ProfileSide = () => {
   return (
     <div className='ProfileSide'>
-      {/* <LogoSearch /> */}
+      <LogoSearch />
       {/* <ProfileCard /> */}
       {/* <FollowersCard /> */}
     </div>
