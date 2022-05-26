@@ -9,7 +9,7 @@ const ShareModal = ({ modalOpened, setModalOpened }) => {
       overlayColor={
         theme.colorScheme === "dark"
           ? theme.colors.dark[9]
-          : theme.colors.light[0]
+          : theme.colors.gray[0]
       }
       overlayOpacity={0.55}
       overlayBlur={3}

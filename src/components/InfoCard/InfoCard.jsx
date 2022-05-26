@@ -16,10 +16,10 @@ const InfoCard = () => {
             height="1.2rem"
             onClick={() => setModalOpened(true)}
           />
-          {/* <ProfileModal
+          <ProfileModal
             modalOpened={modalOpened}
             setModalOpened={setModalOpened}
-          /> */}
+          />
         </div>
       </div>
 
