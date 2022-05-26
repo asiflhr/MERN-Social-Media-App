@@ -13,7 +13,8 @@ const Auth = () => {
         </div>
       </div>
 
-      <Login />
+      {/* <Login /> */}
+      <SignUp />
     </div>
   )
 }
@@ -31,7 +32,7 @@ function Login(){
           <input type="password" className="infoInput" placeholder='Password' name='password'/>
         </div>
         <div>
-          <span>
+          <span style={{fontSize: '12px'}}>
             Don't have and account? <a href="/signup">Sign Up</a>
           </span>
           <button type="submit" className="infoButton button">Log In</button>
@@ -39,6 +40,62 @@ function Login(){
       </form>
     </div>
   )
+}
+
+function SignUp(){
+  return (
+    <div className="a-right">
+      <form action="" className="infoForm authForm">
+        <h3>Sign Up</h3>
+
+        <div>
+          <input
+            type="text"
+            className="infoInput"
+            placeholder="First Name"
+            name="firstname"
+          />
+          <input
+            type="text"
+            className="infoInput"
+            placeholder="Last Name"
+            name="lastname"
+          />
+        </div>
+
+        <div>
+          <input
+            type="text"
+            className="infoInput"
+            placeholder="Username"
+            name="username"
+          />
+        </div>
+
+        <div>
+          <input
+            type="password"
+            className="infoInput"
+            placeholder="Password"
+            name="password"
+          />
+          <input
+            type="password"
+            className="infoInput"
+            placeholder="Confirm Password"
+            name="confirmpassword"
+          />
+        </div>
+
+        <div>
+          <span style={{fontSize: '12px'}}>
+            Already have an Account? <a href="/signin">Log In</a>
+          </span>
+        </div>
+        <button type="submit" className="infoButton button">Sign Up</button>
+      </form>
+    </div>
+  );
 }
 
 export default Auth
