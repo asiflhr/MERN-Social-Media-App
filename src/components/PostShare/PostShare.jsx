@@ -70,7 +70,7 @@ const PostShare = () => {
         </div>
         {image && (
           <div className="previewImage">
-            <UilTimes onClick={()=>setImage(null)}/>
+            <UilTimes onClick={()=>setImage(null)} style={{border: '1px solid white'}}/>
             <img src={image.image} alt="" />
           </div>
         )}
